@@ -1,4 +1,4 @@
-# Movie Database
+# movie database
 
   Esse projeto nasceu como uma forma de testar os conhecimentos adquiridos em React, javascript, HTML e CSS durante essa quarentena.
   O projeto consiste em uma página web onde o usuário pode procurar filmes e obter informações básicas, como por exemplo rating e a description do filme.

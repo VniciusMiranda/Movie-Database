@@ -1,23 +1,87 @@
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 # movie database
 
-  Esse projeto nasceu como uma forma de testar os conhecimentos adquiridos em React, javascript, HTML e CSS durante essa quarentena.
-  O projeto consiste em uma página web onde o usuário pode procurar filmes e obter informações básicas, como por exemplo rating e a description do filme.
+This is my first web project and it was created to test the knowledge that I acquired in React, javascript, HTML and CSS during the quarantine because of the new corona virus. The project itself consist in a web page where the user are able to search for movies and get basic information about then, like the description and the rating of the movie (nothing original, but hey, we gotta learn to walk before we can run right?).
   
-  Para obter as informações necessárias sobre os filmes foi utilizada a API:  http://www.omdbapi.com/
+## running on your machine
 
-## como rodar na sua máquina
 
-  Para ter esse projeto rodando na sua máquina local primeiramente será necessário adquirir uma API key no seguinte link:
-  
-  *  http://www.omdbapi.com/
-  
-  É possível adquirir a Key de forma gratuita, porém nesse caso haverá um limite de requests que podem ser feitos em um dia. Aquirida sua chave basta substituir o valor da variável API_KEY no arquivo App.js pelo valor da sua chave:
-  ```
-  const API_KEY = "{insert your key here}"
-  ```
- Após feito isso basta rodar o projeto como qualquer outra aplicação feita em React. No seu terminal dentro do diretório movie-database rode o comando:
- ```
- npm start
- ```
- E a aplicação estará disponível em localhost:3000.
+To get the information necessary to build this website a third-party API was use to fetch the data. So to have this project running on your local machine properly first you gonna have to get an API key in the link bellow:
 
+*  http://www.omdbapi.com/
+
+It's possible to get the Key for free, but in this case there will be a limit of requests that can be done in one day (I think that is 1000). Once you have the key, replace the value of the the variable API_KEY on the file App.js for the value of your key: 
+
+```
+const API_KEY = "{insert your key here}"
+```
+
+Once that is done, just follow the next default steps given in any React app README and you are ready to search for your favorite movie :)
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

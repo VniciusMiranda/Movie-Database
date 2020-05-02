@@ -1,10 +1,19 @@
 section{
-    padding: 15px;
+    padding: 20px;
+    text-align: center;
 }
+/* taking off the anoying outline of firefox browser on buttons*/
+button::-moz-focus-inner {
+    border: 0;
+  }
 
 .searchBox{
     display: block;
-    width: 100%;
+    float: left;
+    width:80%;
+}
+.searchBox input{
+    width:100%;
     padding: 15px;
 
     border: none;
@@ -21,7 +30,35 @@ section{
     transition: 0.4s ease-out;
 }
 
-.searchBox:focus{
+.searchBox input:focus{
 
     box-shadow: 0px 0px 8px 3px #4484C4;
+}
+
+.buttonBox {
+    display: block;
+    float: right;
+    margin: 2px;
+    width: 19%;
+}
+
+.buttonBox button{
+    padding: 15px;
+    width:100%;
+    
+    border: none;
+    outline: none;
+    background: none;
+
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    color:#ffff;
+    background-color: rgb(29, 77, 141);
+    
+    transition: 0.1s ease-in;
+}
+
+.buttonBox button:hover{
+    background-color: #4484C4;
 }

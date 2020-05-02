@@ -13,7 +13,9 @@ const App = () => {
         <h1>Movie Database with React</h1>    
       </header>
       <main>
-        <Search api_key={API_KEY} />    
+      <Search api_key={API_KEY} />    
+        {/* <Movie/>
+        <Results/> */}
       </main>
     </div>
   );

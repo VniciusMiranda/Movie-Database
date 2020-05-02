@@ -12,9 +12,14 @@ const Search = (props) =>{
         results: [],
         selected: {}
     });
+    //temporary, just for debbuging ;) 
+    useEffect(() =>console.log(state.search), [state.search]);
 
-    useEffect(() =>console.log(state.search), [state.search])
-    
+    const submmit = () =>{
+
+
+    }
+
     const inputHandler = (event) =>{
         setState({
             search: event.target.value
@@ -22,15 +27,19 @@ const Search = (props) =>{
     }
 
     return (
+       
         <section>
-            <input 
-            className='searchBox' 
+        <div className='buttonBox'>
+        <button onClick={submmit}>search</button>
+        </div>
+        <div className='searchBox'>   
+            <input  
             type='text' 
             placeholder='search for a movie...'
             value={state.search}
             onChange={inputHandler}  
             />
-                 
+        </div>
         </section>
     );
 }

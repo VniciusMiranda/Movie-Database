@@ -8,9 +8,9 @@ const App = () => {
 
   return (
     <div >
-      <header> 
-        <img src='React-icon.png'/>
-        <h1>movie database</h1>    
+      <header>
+        <label><img src='React-icon.png'/></label>
+        <h1>Movie Database with React</h1>    
       </header>
       <main>
         <Search api_key={API_KEY} />    

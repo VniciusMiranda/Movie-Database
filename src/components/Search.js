@@ -2,18 +2,20 @@ import React, { useState, useEffect } from 'react';
 
 import './Search.css';
 
-
 const Search = (props) =>{
     const [state, setState] =useState({
         search: ""
     });
 
+    // send the data to the parent component: App
     const submmit = () =>{
         props.search(state.search);
     }
 
+    // temporary, just for debbuging ;)
     useEffect(()=>{console.log(state.search)}, [state.search]);
 
+    // save the data on the state
     const inputHandler = (event) =>{
         setState({
             search: event.target.value
@@ -22,7 +24,7 @@ const Search = (props) =>{
 
     return (
        
-        <section>
+        <div className='search'>
         <div className='buttonBox'>
         <button onClick={submmit}>search</button>
         </div>
@@ -34,7 +36,7 @@ const Search = (props) =>{
             onChange={inputHandler}  
             />
         </div>
-        </section>
+        </div>
     );
 }
 

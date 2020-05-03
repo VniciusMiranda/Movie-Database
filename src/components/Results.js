@@ -1,14 +1,13 @@
 import React from 'react';
 import './Results.css'
-const Results = (props) =>{
-
-
-    return (
-
-        <div>
-            Results Component
-        </div>
-    );
+const Results = ({display, movies}) =>{
+    
+    if(display){
+        let movieList = movies.map(movie =><h1>{movie.Title}</h1>);
+        return(<div>{movieList}</div>);
+    }else{
+        return <></>;
+    }
 
 }
 

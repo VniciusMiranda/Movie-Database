@@ -1,10 +1,21 @@
 import React from 'react';
-import './Results.css'
+
+import Result from './Result';
+import './Results.css';
+
 const Results = ({display, movies}) =>{
     
     if(display){
-        let movieList = movies.map(movie =><h1>{movie.Title}</h1>);
-        return(<div>{movieList}</div>);
+        let movieList = movies.map(
+            movie =><Result key={movie.imdbID} movie={movie}/>
+            );
+        
+        
+        return(
+            <div className='results'>
+                {movieList}
+            </div>
+            );
     }else{
         return <></>;
     }

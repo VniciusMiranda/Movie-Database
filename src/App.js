@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; 
-import './App.css';
 
 import Search from './components/Search';
 import Results from './components/Results';
 import Error from './components/Error';
 import Loading from './components/Loading';
 
+import './App.css';
+
 
 const App = () => {
 
-  const APIKey = '';
+  const APIKey = '{insert the api key here}';
 
   const [state, setState] = useState({
     movies:[],

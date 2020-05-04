@@ -7,33 +7,32 @@ const Search = (props) =>{
         search: ""
     });
 
-    // send the data to the parent component: App
-    const submmit = () =>{
-        props.search(state.search);
-    }
-
     // temporary, just for debbuging ;)
     useEffect(()=>{console.log(state.search)}, [state.search]);
 
     // save the data on the state
-    const inputHandler = (event) =>{
+    const handleChange = (event) =>{
         setState({
             search: event.target.value
         });
     }
 
-    return (
-       
+    return (   
         <div className='search'>
         <div className='buttonBox'>
-        <button onClick={submmit}>search</button>
+        <button onClick={()=> props.search(state.search)}>search</button>
         </div>
         <div className='searchBox'>   
-            <input  
+            <input
+            onKeyPress={(e)=>{
+                if(e.key == 'Enter'){
+                    props.search(state.search); 
+                 }
+            }}
             type='text' 
             placeholder='search for a movie...'
             value={state.search}
-            onChange={inputHandler}  
+            onChange={handleChange}  
             />
         </div>
         </div>

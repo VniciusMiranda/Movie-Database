@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # movie database
 
-This is my first web project and it was created to test the knowledge that I acquired in React, javascript, HTML and CSS during the quarantine because of the new corona virus. The project itself consist in a web page where the user are able to search for movies and get basic information about then, like the description and the rating of the movie (nothing original, but hey, we gotta learn to walk before we can run right?).
+This is my first web project and it was created to test the knowledge that I acquired in React, javascript, HTML and CSS during the quarantine because of the new corona virus. The project itself consist in a web page where the user are able to search for movies and get basic information about then, like the description and the rating of the movie.
   
 ## running on your machine
 
@@ -11,11 +11,11 @@ To get the information necessary to build this website a third-party API was use
 
 *  http://www.omdbapi.com/
 
-It's possible to get the Key for free, but in this case there will be a limit of requests that can be done in one day (I think that is 1000). Once you have the key, replace the value of the the variable API_KEY on the file App.js for the value of your key: 
+It's possible to get the Key for free, but in this case there will be a limit of requests that can be done in one day (I think that is 1000). Once you have the key, create a file with the name .env and add a variable with the name REACT_APP_API_KEY with the value of your key:
 
-```
-const API_KEY = "{insert your key here}"
-```
+'''
+REACT_APP_API_KEY={your key here }
+'''
 
 Once that is done, just follow the next default steps given in any React app README and you are ready to search for your favorite movie :)
 

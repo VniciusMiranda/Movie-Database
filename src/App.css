@@ -36,3 +36,15 @@ main {
   width: 100%;
   text-align: center;
 }
+
+.content Error{
+
+  margin-top: 80px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.content Error span{
+
+  transform: rotate(90deg);
+}

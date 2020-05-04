@@ -2,11 +2,9 @@ import React from 'react';
 
 import './Error.css';
 
-
-const Error = ({display, httpError}) =>{
+const Error = ({ httpError}) =>{
     return (
-
-        <div className='error-Message'>
+        <div className='error-message'>
             <h1>error {httpError}</h1>
         </div>
     );    

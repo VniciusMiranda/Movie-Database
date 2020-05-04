@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import axios from 'axios'; 
 
 import Search from './components/Search';
@@ -24,7 +24,7 @@ const App = () => {
     console.log("request url: " + requestUrl);
     setState({render: 'loading'});
     axios.get(requestUrl).then(response => {
-      
+
       // when nothing is found, this API returns empty arrays instead of a HTTP error
       response.data.Search ? 
       setState({

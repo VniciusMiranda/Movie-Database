@@ -26,7 +26,7 @@ const Search = (props) =>{
         <div className='searchBox'>   
             <input
             onKeyPress={(e)=>{
-                if(e.key == 'Enter'){
+                if(e.key === 'Enter'){
                     props.request(state.inputString); 
                  }
             }}

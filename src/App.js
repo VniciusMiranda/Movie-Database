@@ -2,8 +2,9 @@ import React, { useState} from 'react';
 import axios from 'axios'; 
 
 import Home from './components/Home';
-import './App.css';
+import MovieInfo from './components/MovieInfo';
 
+import './App.css';
 
 const App = () => {
 
@@ -13,7 +14,6 @@ const App = () => {
     render:''
   });
 
-    // handle the requests and the consequences of it
     const requestMovies = (search) =>{
       let requestUrl = 
       `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${search}&r=json`;
@@ -40,13 +40,14 @@ const App = () => {
     }
 
     return(
-      <div>
+      <>
         <Home requestMovies={requestMovies} requestInfo={{
           movies: state.movies,
           httpError: state.httpError,
           render: state.render
         }} />
-      </div>
+        <MovieInfo/>
+      </>
 
     );
 }

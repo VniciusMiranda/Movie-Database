@@ -2,36 +2,37 @@ import React, { useState, useEffect } from 'react';
 
 import './Search.css';
 
+
 const Search = (props) =>{
     const [state, setState] =useState({
-        search: ""
+        inputString: ""
     });
 
     // temporary, just for debbuging ;)
-    useEffect(()=>{console.log(state.search)}, [state.search]);
+    useEffect(()=>{console.log(state.inputString)}, [state.inputString]);
 
     // save the data on the state
     const handleChange = (event) =>{
         setState({
-            search: event.target.value
+            inputString: event.target.value
         });
     }
 
     return (   
         <div className='search'>
         <div className='buttonBox'>
-        <button onClick={()=> props.search(state.search)}>search</button>
+        <button onClick={()=> props.request(state.inputString)}>search</button>
         </div>
         <div className='searchBox'>   
             <input
             onKeyPress={(e)=>{
                 if(e.key == 'Enter'){
-                    props.search(state.search); 
+                    props.request(state.inputString); 
                  }
             }}
             type='text' 
             placeholder='search for a movie...'
-            value={state.search}
+            value={state.inputString}
             onChange={handleChange}  
             />
         </div>

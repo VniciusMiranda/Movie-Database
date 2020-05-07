@@ -2,7 +2,7 @@ import React, { useState} from 'react';
 import axios from 'axios'; 
 
 import Search from './components/Search';
-import Results from './components/Results';
+import MovieList from './components/MovieList';
 import Error from './components/Error';
 import Loading from './components/Loading';
 
@@ -49,7 +49,7 @@ const App = () => {
       case 'loading':
         return(<Loading/>);
       case 'results':
-        return(<Results movies={state.movies}/>);
+        return(<MovieList movies={state.movies}/>);
       case 'error':
         return(<Error httpError={state.httpError}/>);
     }
@@ -58,10 +58,10 @@ const App = () => {
     <div >
       <header>
         <img src='React-icon.png'/>
-        <h1>Movie Database with React</h1>    
+        <h1>Movie Database with React</h1>
       </header>
       <main>
-      <Search search={requestMovies}/>
+      <Search request={requestMovies}/>
       <div className='content'>{renderCheck()}</div>
       </main>
     </div>

@@ -1,27 +1,24 @@
-.results{
+.movieList{
     display: flex;
     flex-wrap: wrap;
-    margin: 0px, -15px;
+    margin: 0px, -15px;  
 }
-.results .result{
+.movieList .movie{
     width: 33.33333333%;
     display: flex;
     min-width: 250px;
     padding: 15px;
     cursor: pointer;
     flex-direction: column;
-    animation-name: slideIn;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
 }
 
-.results .result img{
+.movieList .movie img{
     display: block;
     width: 100%;
 
 }
 
-.results .result h3{
+.movieList .movie h3{
     padding: 20px;
     color: #fff;
     font-size: 20px;
@@ -31,20 +28,8 @@
     flex: 1 1 100%;
     transition: 0.4s ease-out;
 }
-.results .result:hover h3{
+.movieList .movie:hover h3{
 
     color:#223343;
     background-color: #fff;
-}
-
-
-@keyframes slideIn{
-
-    0%{
-        bottom: -1000px;
-    }
-    100%{
-        bottom: 0;
-    }
-
 }

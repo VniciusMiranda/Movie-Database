@@ -1,0 +1,40 @@
+.home-page header{
+    padding: 30px 15px 20px;
+    text-align: center;
+    
+  }
+    
+.home-page  header h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 400;
+  }
+  
+.home-page   header img {
+    height:60px;
+    
+  }
+  
+.home-page   main {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .content{
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .content Error{
+  
+    margin-top: 80px;
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  .content Error span{
+  
+    transform: rotate(90deg);
+  }

@@ -11,7 +11,10 @@ const App = () => {
     return(
       <Router>
           <Home/>
-          <MovieInfo/>
+          <Switch>  
+            <Route path='/:search' exact></Route>
+            <Route path='/:search/:id'></Route>
+          </Switch>
       </Router>
     );
 

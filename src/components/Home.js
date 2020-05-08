@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import axios from 'axios';
 
 import Search from './Search';
 import MovieList from './MovieList';
@@ -42,7 +43,7 @@ const Home = () =>{
 
       const renderCheck = () =>{
     
-        switch(requestInfo.render){
+        switch(state.render){
           case 'loading':
             return(<Loading/>);
           case 'results':

@@ -1,24 +1,37 @@
-.movieList{
+.movie-list{
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0px, -15px;  
+    justify-content: center;
 }
-.movieList .movie{
+
+.movie-list Error{
+  
+    margin-top: 80px;
+    font-size: 25px;
+    color: #fff;
+}
+  
+.movie-list Error span{
+  
+    transform: rotate(90deg);
+}
+
+.movie-list .movie{
     width: 33.33333333%;
-    display: flex;
     min-width: 250px;
     padding: 15px;
     cursor: pointer;
     flex-direction: column;
 }
 
-.movieList .movie img{
+.movie-list .movie img{
     display: block;
     width: 100%;
 
 }
 
-.movieList .movie h3{
+.movie-list .movie h3{
     padding: 20px;
     color: #fff;
     font-size: 20px;
@@ -28,7 +41,7 @@
     flex: 1 1 100%;
     transition: 0.4s ease-out;
 }
-.movieList .movie:hover h3{
+.movie-list .movie:hover h3{
 
     color:#223343;
     background-color: #fff;

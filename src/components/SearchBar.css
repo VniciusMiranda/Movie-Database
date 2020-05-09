@@ -1,6 +1,29 @@
-.search{
+
+.search-bar header{
+    padding: 30px 15px 20px;
+    text-align: center;
+    
+  }
+    
+.search-bar header h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 400;
+  }
+  
+.search-bar header img {
+    height:60px;
+    
+  }
+
+
+.search-bar-container{
     padding: 20px;
     text-align: center;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  
 }
 /* taking off the anoying outline of firefox browser on buttons*/
 button::-moz-focus-inner {
@@ -35,14 +58,14 @@ button::-moz-focus-inner {
     box-shadow: 0px 0px 8px 3px #4484C4;
 }
 
-.buttonBox {
+.button-container {
     display: block;
     float: right;
     margin: 2px;
     width: 19%;
 }
 
-.buttonBox button{
+.button-container button{
     padding: 15px;
     width:100%;
     
@@ -59,6 +82,6 @@ button::-moz-focus-inner {
     transition: 0.1s ease-in;
 }
 
-.buttonBox button:hover{
+.button-container button:hover{
     background-color: #4484C4;
 }

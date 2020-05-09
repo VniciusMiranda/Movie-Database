@@ -1,10 +1,9 @@
 import React from 'react';
 
-
-const Error = ({ httpError}) =>{
+const Error = ({match}) =>{
     return (
-        <div className='error-message'>
-            <h1>error {httpError}</h1>
+        <div>
+            <h1>{match.error} error</h1>           
         </div>
     );    
 }

@@ -21,16 +21,19 @@ const MovieInfo = ({match}) =>{
 
     //TODO: add more info in this component to pratice HTML and CSS
 
-    return movie == 0 ? <Loading/>:(
+    return (
        <div className='movie-info'>
-           <div className='content'>
-                <h2>{movie.Title}<span> {movie.Year}</span></h2>
-                <p className='rating'>Rating: {movie.Rated}</p>
-                <div className='plot'>
-                    <img alt='imagi da hora' src={movie.Poster}/>
-                    <p>{movie.Plot}</p>
+            {
+               
+               movie == 0 ? <Loading/>:<div className='content'>
+                    <h2>{movie.Title}<span> {movie.Year}</span></h2>
+                    <p className='rating'>Rating: {movie.Rated}</p>
+                    <div className='plot'>
+                        <img alt='imagi da hora' src={movie.Poster}/>
+                        <p>{movie.Plot}</p>
+                    </div>
                 </div>
-           </div>
+           }
        </div>
     );
 }

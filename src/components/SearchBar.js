@@ -9,8 +9,7 @@ const Search = () =>{
     let history = useHistory();
     return (
         <div className='search-bar'>
-            <header>
-               
+            <header>        
                 <h1>Movie Database with React</h1>
             </header>
             <div className='search-bar-container'>

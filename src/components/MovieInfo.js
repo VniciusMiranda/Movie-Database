@@ -5,7 +5,7 @@ const MovieInfo = (props) =>{
 
     return(
         <div>
-            <h1>MovieInfo </h1>
+            <h1>MovieInfo</h1>
         </div>
     );
 

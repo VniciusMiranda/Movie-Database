@@ -1,0 +1,74 @@
+.movie-info{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #445565;
+
+    overflow-y: scroll;
+}
+
+.movie-info .content{
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 25px;
+
+    color: #ffff;
+}
+
+.movie-info .content h2{
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+
+.movie-info .content h2 span{
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+
+.movie-info .content .rating{
+    margin-bottom: 30px;
+}
+
+.movie-info .content .plot{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px 30px;
+}
+
+.movie-info .content .plot img{
+    flex: 1 1 50%;
+    max-width: 300px;
+    padding: 0px 15px;
+}
+
+.movie-info .content .plot p{
+    flex: 1 1 50%;
+    padding: 15px;
+}
+
+.movie-info .content .close-button{
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+
+    background: #4484C4;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+
+    transition: 0.4s ease-out;
+}
+
+.movie-info .content .close-button{
+    background-color: #223343;
+}

@@ -31,13 +31,13 @@ const MovieList = ({match}) =>{
         });    
     }
     return(
-        <div className='movie-list'>
-            {
-              movies != 0 ? 
-              movies.map(movie => <Movie key={movie.imdbID} movie={movie}/>) :
-              <Loading/>
-            } 
-        </div>
+      <div className='movie-list'>
+        {
+          movies != 0 ? 
+          movies.map(movie => <Movie key={movie.imdbID} movie={movie}/>):
+          <Loading/>
+        } 
+      </div>
         );
 }
 

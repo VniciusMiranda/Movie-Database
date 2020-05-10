@@ -2,18 +2,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # movie database
 
-This is my first web project with React and it was created to test some of the knowledge that I acquired during the quarantine because of the new corona virus. The project itself consist in a simple(really simple, it's cool, but don't get too much excited lol) web page where the user are able to search for movies and get basic information about then, like the description and the rating of the movie.
+This is my first web project with React and it was created to test some of the knowledge that I acquired during the quarantine because of the new corona virus. The project itself consist in a simple(really simple, it's cool, but don't get too much excited lol) web page where the user are able to search for movies and get basic information about then, like the description and the rating of the movie. The objective of this project is just for practice of concepts learned about web devlopment.
 
 
 ## running on your machine
 
-To get the information necessary to build this website a third-party API was use to fetch the data. So to have this project running on your local machine properly first you gonna have to get an API key in the link bellow:
+To get the information necessary to build this website a third-party API was use to fetch the data. So to have this project running on your local machine first you gonna have to get an API key in the link bellow:
 
 
 *  http://www.omdbapi.com/
 
 
-It's possible to get the Key for free, but in this case there will be a limit of requests that can be done in one day (I think that is 1000). Once you have the key, create a file with the name .env and add a variable with the name REACT_APP_API_KEY with the value of your key:
+It's possible to get the Key for free, but in this case there will be a limit of requests that can be done in one day (I think that is 1000). Once you have the key, create a file with the name .env and add the variable REACT_APP_API_KEY with the value of your key:
 
 ```
 REACT_APP_API_KEY={your API key here}

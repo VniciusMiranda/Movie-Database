@@ -19,10 +19,10 @@ const MovieList = ({match}) =>{
     },[match.params.search]);
 
     const requestMovies = (search) =>{
-      let requestUrl = 
+      let moviesUrl = 
         `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${search}&r=json`;
       
-      axios.get(requestUrl).then(response => {
+      axios.get(moviesUrl).then(response => {
         let data = response.data.Search;
         // when nothing is found, this API returns empty arrays instead of a HTTP error
         data ? setMovies(data) : history.push('/404');

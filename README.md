@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # movie database
 
-This is my first web project with React and it was created to test some of the knowledge that I acquired during the quarantine because of the new corona virus. The project itself consist in a simple(really simple, it's cool, but don't get too much excited lol) web page where the user are able to search for movies and get basic information about then, like the description and the rating of the movie. The objective of this project is just for practice of concepts learned about web devlopment.
+This is my first web project with React and it was created to test some of the knowledge that I acquired during the quarantine because of the new corona virus. The project itself consist in a simple web page where the user are able to search for movies and get basic information about then, like the description and the rating of the movie. The objective of this project is just for practice of concepts learned about web devlopment.
 
 
 ## running on your machine
